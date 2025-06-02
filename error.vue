@@ -2,9 +2,12 @@
 import type { NuxtError } from '#app'
 
 const props = defineProps<{ error: NuxtError }>()
+const err = useError()
 
 const message = computed(() => {
   const message = props.error.message ?? props.error.statusMessage;
+  console.log('props.error', props.error)
+  console.log('err.value', err.value)
   if (message != null && message !== '') {
     return message;
   }

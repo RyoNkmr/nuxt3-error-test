@@ -4,6 +4,7 @@ const _ = await Promise.resolve(null);
 throw createError({
   statusCode: 404,
   message: 'pageがありません(message)',
+  statusMessage: 'pageがありません(statusMessage)',
   fatal: false,
 })
 </script>

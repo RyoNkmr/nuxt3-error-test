@@ -2,6 +2,7 @@
 throw createError({
   statusCode: 404,
   message: 'pageがありません(message)',
+  statusMessage: 'pageがありません(statusMessage)',
   fatal: false,
 })
 </script>
